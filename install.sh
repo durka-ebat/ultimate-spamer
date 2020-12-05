@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-echo "--------------------"
+echo "-----Установщик-----"
 echo "| 1. Termux        |"
 echo "| 2. Другой Unix   |"
 echo "| 3. iSH           |"

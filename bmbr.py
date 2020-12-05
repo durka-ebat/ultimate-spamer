@@ -32,23 +32,24 @@ banner = colored("""
 
 
 Автор @durka-ebat
+Версия: 1.1
 """, "red")
 
 print(banner)
 
-spam = input ("Куда спамить Почта(1)/Телефон(2): ")
+spam = input (Fore.BLUE + "Куда спамить Почта(1)/Телефон(2): ")
 
 if spam == '1':
 
-    server = input ('Gmail(1)/Yahoo(2): ')
-    user = input('Ваша почта: ')
-    passwd = getpass.getpass('Пароль от вашей почты: ')
+    server = input (Fore.BLUE + 'Gmail(1)/Yahoo(2): ')
+    user = input(Fore.BLUE + 'Ваша почта: ')
+    passwd = getpass.getpass(Fore.BLUE + 'Пароль от вашей почты: ')
 
 
-    to = input('\nПочта жертвы: ')
+    to = input(Fore.BLUE + '\nПочта жертвы: ')
     #subject = raw_input('Subject: ')
-    body = input('Сообщение: ')
-    total = input('Кол-во сообщений: ')
+    body = input(Fore.BLUE + 'Сообщение: ')
+    total = input(Fore.BLUE + 'Кол-во сообщений: ')
 
     if server == '1':
         smtp_server = 'smtp.gmail.com'
@@ -84,7 +85,7 @@ if spam == '1':
         sys.exit()
 
 elif spam == '2':
-    _phone = input('Введите номер для спама +')
+    _phone = input(Fore.BLUE + 'Введите номер для спама +')
     if _phone[0] == '+':
     	_phone = _phone[1:]
     if _phone[0] == '8':
